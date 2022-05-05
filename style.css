@@ -43,6 +43,7 @@ body {
 
 .footer .social a {
     display: inline-block;
+    justify-content: space-around;
     margin-top: 8px;
 }
 .footer ul li {
