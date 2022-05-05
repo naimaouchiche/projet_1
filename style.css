@@ -28,10 +28,10 @@ body {
 
 .nav-item a {
     color: black;
-    letter-spacing: 1.2px;ghit 
+    letter-spacing: 1.2px;
 }
 
-.nav-item:first-child {
+.nav-item: first-child {
     margin-right: auto;
     margin-left: 2rem;
 }
