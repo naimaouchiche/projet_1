@@ -1,6 +1,6 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing:border-box;
     list-style: none;
     text-decoration: none;
@@ -9,20 +9,39 @@
 
 body {
     font-family: sans-serif;
-    height: 100vh;
+    height:100vh;
+    --nav-height: 80px;
 }
 
-.nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Page index avec image en fond d'ecran de la Crète*/
 
 .nav-listindex {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
     position: fixed;  
+    transition: transform 0.2s;
+    height: var(--nav-height);
+}
+.nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+  }
+  
+  .nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+  }
+
+/*Barre de navigation*/
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-item {
@@ -35,56 +54,70 @@ body {
     letter-spacing: 1.2px;
 }
 
+/*Survol des liens*/
+
 .nav-item a:hover {
     color: blue;
     text-decoration: underline;
 }
+/*1ère page index*/
 
 h1 {
     text-align: center;
+    margin: 20px;
 }
+
 .container {
-    display: flex;
-    justify-content: center;
+    display:flex;
     align-items:center;
     margin: 30px;
-
-
 }
+
 .img1 {
-    display: block;
     height: 150px;
     width: 100%;
+    text-align: center;
 }
+
 .img1 img {
-    width: 60%;
+    width: 50%;
 }
+
 .img2 {
-    display: block;
     height: 160px;
     width: 100%;
+    text-align: center;
 }
+
 .img2 img {
+    margin-top: 35px;
     width: 60%;
 }
 
 .img3 {
-    display: block;
-    height: 100px;
+    text-align: center;
+    height: 105px;
     width:  100%;
+    margin-bottom: 35px;
 }
+
 .img3 img {
-    width: 50%;
+    width: 40%;
 }
 
 /*Lieux à Visister*/
+
 .lieux {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .lieux h2 {
     text-align: center;
     margin-bottom: 80px;
+}
+.blu {
+    text-align: center;
 }
 .flexbox {
     display: inline-flex;
@@ -95,29 +128,26 @@ h1 {
 .flex1 {
     display: flex;
     margin-left: 15px;
-    border-radius: 20px;
     width: auto;
     height: 184px;
     margin-bottom: 15px;
-}
-
-p {
-    margin-left: 10px;
 }
 
 .flex2 {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
     width: auto;
     height: 130px;
+}
+p {
+    margin-left: 10px;
+    text-align: center;
 }
 .flex3 {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
     width: auto;
     height: 180px;
 }
@@ -126,7 +156,6 @@ p {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
     width: auto;
     height: 165px;
 }
@@ -153,9 +182,10 @@ h3 {
 }
 
 p {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     margin-bottom: 25px;
+    margin-right: 10px;
 
 }
 
@@ -175,58 +205,56 @@ p {
 }
 
 /*Page randonées*/
+
 .rando {
+    display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.rando h2 {
+
+.rando1 h2 {
     text-align: center;
     margin-bottom: 80px;
+    margin-top: 80px;
 }
+
 .Flexbox_A {
-    display: flex;
     justify-content: space-between;
-    flex: 1 1;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .flexboxA_1 {
     display: flex;
     margin-left: 15px;
-    border-radius: 20px;
     width: auto;
-    height: 184px;
+    height: 140px;
     margin-bottom: 15px;
 }
 
-p {
-    margin-left: 10px;
-}
 
 .flexboxA_2 {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
     width: auto;
     height: 130px;
 }
+
 .flexboxA_3 {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
     width: auto;
-    height: 180px;
+    height: 188px;
 }
 
 .flexboxA_4 {
     display: flex;
     margin-left: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
     width: auto;
-    height: 165px;
+    height: 168px;
 }
 
 h3 {
@@ -238,24 +266,61 @@ h3 {
 .Flexbox_B {
     background-color: rgb(232, 238, 238);
     margin: 60px;
+    margin-top: 200px;
     border-radius: 20px;
+    height: 300px;
+    width: 60%;
 }
 
-.Flexbox_B p {
+
+/*Page spcécialités*/
+
+.spécialités {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.spécialités h2 {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-
+    margin-bottom: 80px;
 }
 
+.spécialités p {
+    text-align: left;
+}
 
+.flexbox_c1 {
+    display: flex;
+    margin-left: 15px;
+    width: 60%;
+    height: 210px;
+    margin-bottom: 15px;
+    
+}
 
+.flexbox_c2 {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 200px;
+}
 
+.flexbox_c3 {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 180px;
+}
 
-
-
-
-
+.flexbox_c4 {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 180px;
+}
 
 
 /* Section mise en forme Contact Us */
@@ -263,6 +328,7 @@ h3 {
 h2 {
     text-align: center;
 }
+
 form {
     margin: 0 auto;
     width: 300px;
@@ -274,7 +340,7 @@ form {
   }
   
   /* Section texte et bouton submit */
-  
+
   input[type="text"],
   input[type="email"],
   textarea {
@@ -284,15 +350,57 @@ form {
   }
   
   input[type="submit"] {
+    width: 100%;
     background: rgb(88, 85, 85);
     color: white;
     border: none;
     padding: 5px 10px;
   }
 
+  /*Footer des pages avec lien social*/
+
+/*
+  .grid {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      padding: 20px;
+    }
+
+  .form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "i1 i2" 
+      "ta ta"
+      "bt bt";
+ }
+
+ #firstname {
+     grid-area: i1;
+ }
+
+ #name {
+     grid-area: i2;
+ }
+textarea {
+    grid-area: ta;
+}
+
+.input[type="submit"] {
+    grid-area: bt;
+}
+
+.input .area {
+    margin: 45px;
+    height: 45px;
+    border: 1px darkblue;
+    border-radius: 5px;
+    padding: 10px;
+} */
 .footer {
     background-color: rgb(88, 85, 85);
-    margin-top: 6rem;
+    margin-top: 106px;
 }
     
 .footer .social {
@@ -304,6 +412,7 @@ form {
     justify-content: space-around;
     margin-top: 8px;
 }
+
 .footer ul li {
     display: inline-block;
     align-items: center;
@@ -314,5 +423,172 @@ form {
 .footer .list {
     text-align: center;
     font-size: 12px;
+}
+
+/*  Media queries    */
+
+@media screen and (max-width: 1150px){
+    body {
+        background-color: brown;
+    }
+
+p {
+    font-size: 10px;
 
 }
+}
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 8px;
+    
+    }   
+    .flexbox {
+        display: block;
+        justify-content: space-between;
+    } 
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-listindex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        position: fixed;  
+    }
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        font-weight: 600;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    #logo {
+        display: none;
+    }
+    
+    h2 {
+        font-size: 12px;
+    }
+    
+    .lieux h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display:block;
+        text-align: center;
+        margin: 10px;
+    }
+ 
+    .flex1 {
+        height: 120px;
+    } 
+
+    .flex2 {
+        height: 85px;
+    }
+    
+    .flex3 {
+        height: 120px;
+    }
+    
+    .flex4 {
+        height: 110px;
+    }
+    .flexbox2 {
+        background-color: rgb(232, 238, 238);
+        margin: 20px;
+        border-radius: 20px;
+    }
+    
+    .flex2_1 {
+        height: 114px;
+        width: auto;
+        margin-left: 22px;
+    }
+
+    .flex2_2 {
+        height: 140px;
+        width: auto;
+        margin-left: 22px;
+    
+    }
+    
+    .flex2_3 {
+        height: 160px;
+        width: auto;
+        margin-left: 22px;
+    }
+
+    .rando1 h2 {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .rando {
+        display: block;
+        margin-top: 50px;
+    }
+    .Flexbox_B {
+        margin: 10px;
+        margin-top: 20px;
+        height: 150px;
+        width: 40%;
+    }
+    .flexboxA_1 {
+        margin-left: 5px;
+        width: auto;
+        height: 107px;
+    }
+    
+    .flexboxA_2 {
+        margin-left: 5px;
+        width: auto;
+        height: 100px;
+    }
+    
+    .flexboxA_3 {
+        margin-left: 5px;
+        width: auto;
+        height: 146px;
+    }
+    
+    .flexboxA_4 {
+        margin-left: 5px;
+        width: auto;
+        height: 130px;
+    }
+    .flexbox_c1 {
+        margin-left: 5px;
+        width: 100%;
+        height: 150px;
+    }
+    
+    .flexbox_c2 {
+        margin-left: 5px;
+        width: 100%;
+        height: 145px;
+    }
+    
+    .flexbox_c3 {
+        margin-left: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    
+    .flexbox_c4 {
+        margin-left: 5px;
+        width: 100%;
+        height: 130px;
+    }
+    .spécialités h2 {
+        margin-bottom: 20px;
+    }
+    
+}
+
