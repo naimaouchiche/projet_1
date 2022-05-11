@@ -21,7 +21,7 @@ body {
     align-items: center;
     width: 100%;
     position: fixed;  
-    transition: transform 0.2s;
+    transition: transform 0.8s;
     height: var(--nav-height);
 }
 .nav--hidden {
@@ -29,13 +29,6 @@ body {
     box-shadow: none;
   }
   
-  .nav__link {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 1em;
-    font-weight: bold;
-  }
-
 /*Barre de navigation*/
 
 .nav-list {
@@ -326,6 +319,7 @@ h3 {
 /* Section mise en forme Contact Us */
 
 h2 {
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -359,45 +353,6 @@ form {
 
   /*Footer des pages avec lien social*/
 
-/*
-  .grid {
-      display: grid;
-      grid-template-columns: 40% 60%;
-      padding: 20px;
-    }
-
-  .form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-      "i1 i2" 
-      "ta ta"
-      "bt bt";
- }
-
- #firstname {
-     grid-area: i1;
- }
-
- #name {
-     grid-area: i2;
- }
-textarea {
-    grid-area: ta;
-}
-
-.input[type="submit"] {
-    grid-area: bt;
-}
-
-.input .area {
-    margin: 45px;
-    height: 45px;
-    border: 1px darkblue;
-    border-radius: 5px;
-    padding: 10px;
-} */
 .footer {
     background-color: rgb(88, 85, 85);
     margin-top: 106px;
@@ -439,7 +394,7 @@ p {
 }
 @media screen and (max-width: 500px) {
     p {
-        font-size: 8px;
+        font-size: 10px;
     
     }   
     .flexbox {
@@ -448,6 +403,7 @@ p {
     } 
     .nav-list {
         flex-direction: column;
+        margin-top: 10px;
     }
     .nav-listindex {
         display: flex;
@@ -456,6 +412,7 @@ p {
         align-items: center;
         width: 100%;
         position: fixed;  
+        margin-top: 10px;
     }
     .nav-item {
         display: flex;
@@ -486,24 +443,40 @@ p {
     }
  
     .flex1 {
-        height: 120px;
+        display: inline;
     } 
 
+    .flex1 img {
+        height: 120px;
+    }
+
     .flex2 {
+        
+        display: inline;
+    }
+
+    .flex2 img{
         height: 85px;
     }
     
     .flex3 {
-        height: 120px;
+        display: inline;
+    }
+    .flex3 img {
+        height: 120px
     }
     
     .flex4 {
+        display: inline;
+    }
+    .flex4 img {
         height: 110px;
     }
     .flexbox2 {
         background-color: rgb(232, 238, 238);
         margin: 20px;
         border-radius: 20px;
+        
     }
     
     .flex2_1 {
@@ -536,56 +509,90 @@ p {
     }
     .Flexbox_B {
         margin: 10px;
-        margin-top: 20px;
-        height: 150px;
+        margin-left: 120px;
+        margin-top: 10px;
+        height: 160px;
         width: 40%;
     }
     .flexboxA_1 {
+        display: inline;
         margin-left: 5px;
         width: auto;
+    }
+    .flexboxA_1 img {
         height: 107px;
     }
-    
+
     .flexboxA_2 {
+        display: inline;
         margin-left: 5px;
         width: auto;
+        
+    }
+    .flexboxA_2 img {
         height: 100px;
     }
     
     .flexboxA_3 {
+        display: inline;
         margin-left: 5px;
         width: auto;
+        
+    }
+    .flexboxA_3 img {
         height: 146px;
     }
     
     .flexboxA_4 {
+        display: inline;
         margin-left: 5px;
-        width: auto;
+        width: auto;  
+    }
+
+    .flexboxA_4 img {
         height: 130px;
     }
+
     .flexbox_c1 {
-        margin-left: 5px;
-        width: 100%;
+        display: inline;
+    }
+    .flexbox_c1 img {
         height: 150px;
+        border-radius: 25px;
+        
     }
     
     .flexbox_c2 {
+        display: inline;
         margin-left: 5px;
-        width: 100%;
+        width: 100%;     
+    }
+
+    .flexbox_c2 img {
         height: 145px;
+        
     }
     
     .flexbox_c3 {
+        display: inline;
         margin-left: 5px;
         width: 100%;
+    }
+
+    .flexbox_c3 img {
         height: 130px;
     }
     
     .flexbox_c4 {
-        margin-left: 5px;
+        display: inline;
+        margin-left: ;
         width: 100%;
+    }
+
+    .flexbox_c4 img {
         height: 130px;
     }
+
     .spécialités h2 {
         margin-bottom: 20px;
     }
