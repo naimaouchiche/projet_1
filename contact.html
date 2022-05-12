@@ -5,19 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>La Crète</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/logo-html.png" />  
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/25732682cd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/logo-html.png" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-bardesktop">
         <ul class="nav-list">
           <li>
             <img id="logo" src="./img/Logo.png" alt="logo" width="25%"/>
           </li>
+          <li class="nav-item"><a href="index.html">Accueil</a></li>
+          <li class="nav-item"><a href="lieux.html">Lieux à visiter</a></li>
+          <li class="nav-item"><a href="randonnées.html">Les activités</a></li>
+          <li class="nav-item"><a href="spécialités.html">Les spécialités</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-barmobile">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="nav-listmobile">
           <li class="nav-item"><a href="index.html">Accueil</a></li>
           <li class="nav-item"><a href="lieux.html">Lieux à visiter</a></li>
           <li class="nav-item"><a href="randonnées.html">Les activités</a></li>
@@ -42,15 +50,6 @@
             <input type="submit" value="Envoyer" />
           </form>
         </div>
-        <!------
-          <div class="grid">
-            <img src="./img/20868.jpg" alt="Plage de Crète" height="200px">
-            <form>
-              <input type="text" id="firstname" placeholder="Prénom">
-              <input type="text" id="name" placeholder="Nom">
-              <textarea id="votre text" placeholder="Votre Message" cols="30" rows="10"></textarea>
-              <input type="submit" value="Valider">
-            </form>---->
       </section>
       <section class="footer">
         <div class="social">
