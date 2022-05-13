@@ -12,7 +12,7 @@ body {
     height:100vh;
     --nav-height: 80px;
 }
-/*Page index avec image en fond d'ecran de la Crète*/
+/*Page index avec image en fond d'ecran de la Crète et barre de navigation qui disparait*/
 
 .nav-listindex {
     display: flex;
@@ -54,10 +54,11 @@ body {
     text-decoration: underline;
 }
 
-
+/*menu burger*/
 .nav-barmobile {
     display: none;
 }
+
 .nav-barmobile i {
     font-size: 50px;
     position: fixed;
@@ -65,8 +66,6 @@ body {
     right: 15px;
     z-index: 9999;
 }
-
-/*menu burger*/
 
 .nav-listmobile {
     position: fixed;
@@ -84,7 +83,7 @@ body {
 }
 
 .nav-listmobile a {
-  color: aqua;
+  color: white;
   font-weight: 100;  
 }
 
@@ -93,9 +92,8 @@ body {
 }
 
 .icon-visible {
-    color: aqua;
+    color: rgb(88, 85, 85);
 }
-
 
 /*1ère page index*/
 
@@ -142,6 +140,21 @@ h1 {
     width: 40%;
 }
 
+/*Agrandissement de l'image*/
+
+.imgBig {
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    position: fixed;
+    top: 20vh;
+    margin-left: 50vh;
+}
+
+.imgOpacity {
+    opacity: 0.4;
+}
+
 /*Lieux à Visister*/
 
 .lieux {
@@ -177,10 +190,12 @@ h1 {
     width: auto;
     height: 130px;
 }
+
 p {
     margin-left: 10px;
     text-align: center;
 }
+
 .flex3 {
     display: flex;
     margin-left: 15px;
@@ -223,7 +238,6 @@ p {
     margin-top: 10px;
     margin-bottom: 25px;
     margin-right: 10px;
-
 }
 
 .flex2_2 {
@@ -231,7 +245,6 @@ p {
     height: 140px;
     width: auto;
     margin-left: 30px;
-
 }
 
 .flex2_3 {
@@ -309,7 +322,6 @@ h3 {
     width: 60%;
 }
 
-
 /*Page spcécialités*/
 
 .spécialités {
@@ -359,7 +371,6 @@ h3 {
     height: 180px;
 }
 
-
 /* Section mise en forme Contact Us */
 
 h2 {
@@ -373,21 +384,21 @@ form {
     padding-top: 20px;
   }
   
-  label {
+label {
     line-height: 2;
   }
   
   /* Section texte et bouton submit */
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
   }
   
-  input[type="submit"] {
+input[type="submit"] {
     width: 100%;
     background: rgb(88, 85, 85);
     color: white;
@@ -426,11 +437,6 @@ form {
 
 /*  Media queries    */
 
-@media screen and (max-width: 1150px){
-    body {
-        background-color: brown;
-    }
-}
 @media screen and (max-width: 1205px) {
     p {
         font-size: 13px;
@@ -438,6 +444,9 @@ form {
     
 }
 @media screen and (max-width: 1040px){
+    #logo {
+        display: none;
+    }
     p {
         font-size: 10px;
     }
@@ -445,7 +454,7 @@ form {
 
 @media screen and (max-width: 950px){
     p {
-        font-size: 9px;
+        font-size: 7px;
     }
    }
 
@@ -471,6 +480,24 @@ form {
         text-align: center;
     }   
 
+    .img1 img {
+        height: 120px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .img2 img {
+        margin-top: 40px;
+        height: 100px;
+        width: auto;
+    }
+
+    .img3 img {
+        height: 100px;
+        width: auto;
+        margin-top: 30px;
+    }
+    
     .flexbox {
         display: block;
         justify-content: space-between;
@@ -479,6 +506,7 @@ form {
         flex-direction: column;
         margin-top: 10px;
     }
+
     .nav-listindex {
         display: flex;
         flex-direction: column;
@@ -488,6 +516,7 @@ form {
         position: fixed;  
         margin-top: 10px;
     }
+
     .nav-item {
         display: flex;
         flex-direction: column;
@@ -519,7 +548,6 @@ form {
         align-items: center;
         text-align: center;
         margin-bottom: 50px;
-
     } 
 
     .flex1 img {
@@ -568,8 +596,7 @@ form {
     .flexbox2 {
         background-color: rgb(232, 238, 238);
         margin: 20px;
-        border-radius: 20px;
-        
+        border-radius: 20px;   
     }
     
     .flex2_1 {
@@ -671,6 +698,7 @@ form {
         justify-content: center;
         width: 100%;
     }
+
     .flexbox_c1 img {
         height: 150px;
     }
@@ -715,6 +743,7 @@ form {
     .spécialités h2 {
         margin-bottom: 40px;
     }
+
     .spécialités p {
         text-align: center;
         margin-right: 20px;
