@@ -12,6 +12,14 @@ body {
     height:100vh;
     --nav-height: 80px;
 }
+.crete {
+    width: 100%;
+}
+
+#logo {
+    width: 25%;
+}
+
 /*Page index avec image en fond d'ecran de la Crète et barre de navigation qui disparait*/
 
 .nav-listindex {
