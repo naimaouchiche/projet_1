@@ -629,7 +629,6 @@ input[type="submit"] {
     }
 
     .rando1 h2 {
-        margin-bottom: 0;
         margin-top: 40px;
     }
 
@@ -749,7 +748,7 @@ input[type="submit"] {
     }
 
     .spécialités h2 {
-        margin-bottom: 40px;
+        margin-bottom: 40px;         
     }
 
     .spécialités p {
