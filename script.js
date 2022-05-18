@@ -1,9 +1,9 @@
 // disparition de la barre de la nav bar
 
   const nav = document.querySelector(".nav-listindex");  //Barre de navigation avec la class nav-listindex
-  let lastScrollY = window.scrollY;
+  let lastScrollY = window.scrollY;   //dernier niveau de scroll
 
-  window.addEventListener("scroll", () => {  //gestionnaire d'évenement affecté au scroll
+  window.addEventListener("scroll", () => {  //création d'un évenement affecté au scroll
     if (lastScrollY < window.scrollY) {  // Condition apparition de la barre ou disparition lors du scroll 
       nav.classList.add("nav--hidden");;   //Class nav-hidden pour cacher ou faire apparaitre la barre de navigation suivant le scroll
     } else {
